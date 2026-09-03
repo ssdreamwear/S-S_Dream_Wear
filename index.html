@@ -3,71 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S&S Dream Wear | প্রিমিয়াম শার্ট কালেকশন</title>
+    <title>S&S Dream Wear | Premium Men's Collection</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
+    <!-- Navigation Header -->
     <header>
         <div class="logo">
-            <img src="s&S .png" alt="S&S Dream Wear Logo" class="nav-logo">
-            <h1>S&S Dream Wear</h1>
+            <img src="logo.png" alt="S&S Dream Wear Logo" class="nav-logo">
+            <span>S&S Dream Wear</span>
         </div>
         <nav>
             <ul>
-                <li><a href="#">হোম</a></li>
-                <li><a href="#products">ক্যাজুয়াল শার্ট</a></li>
-                <li><a href="#products">ফরমাল শার্ট</a></li>
-                <li><a href="#contact">যোগাযোগ</a></li>
+                <li><a href="#home"><i class="fa-solid fa-house"></i> হোম</a></li>
+                <li><a href="#products"><i class="fa-solid fa-shirt"></i> কালেকশন</a></li>
+                <li><a href="#about"><i class="fa-solid fa-circle-info"></i> আমাদের সম্পর্কে</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
-        <img src="s&S .png" alt="S&S Dream Wear Logo" class="hero-logo">
-        <h2>সেরা দামে সেরা কোয়ালিটির শার্ট | সারাদেশে ডেলিভারি</h2>
-        <p>প্রতিটি পোশাকে আপনার ব্যক্তিত্ব। অনলাইনে অর্ডার করুন এবং ক্যাশ অন ডেলিভারিতে হোম ডেলিভারি নিন!</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <img src="logo.png" alt="S&S Dream Wear Logo" class="hero-logo">
+            <h2>প্রতিটি পোশাকে আপনার ব্যক্তিত্ব</h2>
+            <p>সেরা দামে সেরা কোয়ালিটির প্রিমিয়াম শার্ট | সারাদেশে ক্যাশ অন ডেলিভারি</p>
+            <a href="#products" class="cta-btn"><i class="fa-solid fa-cart-shopping"></i> কালেকশন দেখুন</a>
+        </div>
     </section>
 
-    <section class="products" id="products">
+    <!-- Special Offer Banner -->
+    <div class="offer-banner">
+        🔥 <strong>বিশেষ অফার!</strong> প্রিমিয়াম এক কালার শার্ট মাত্র <strong>৩৯৯ টাকা</strong>! (রেগুলার প্রাইস: ৫৫০ টাকা) — সাইজ: L, XL
+    </div>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
         <h2>আমাদের শার্ট কালেকশন</h2>
         <div class="product-grid">
 
+            <!-- Product Card 1 -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&q=80" alt="Formal Cotton Shirt">
-                <h3>প্রিমিয়াম কটন ফরমাল শার্ট</h3>
-                <p>BDT ৪৫০</p>
-                <a href="https://wa.me/8801522120350?text=আমি%20প্রিমিয়াম%20কটন%20ফরমাল%20শার্টটি%20কিনতে%20চাই" target="_blank" class="buy-btn">WhatsApp-এ অর্ডার করুন</a>
+                <span class="badge">অফার</span>
+                <img src="yellow-shirt.jpg" alt="প্রিমিয়াম মাস্টার্ড শার্ট">
+                <h3>প্রিমিয়াম কটন শার্ট - মাস্টার্ড ইয়েলো</h3>
+                <p class="price"><span class="old-price">৳৫৫০</span> ৳৩৯৯</p>
+                <p class="size">সাইজ: L, XL</p>
+                <a href="https://wa.me/8801522120350?text=আমি%20মাস্টার্ড%20ইয়েলো%20শার্টটি%20অর্ডার%20করতে%20চাই" target="_blank" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp-এ অর্ডার করুন
+                </a>
             </div>
 
+            <!-- Product Card 2 -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&q=80" alt="Casual Printed Shirt">
-                <h3>ট্রেন্ডি প্রিন্টেড ক্যাজুয়াল শার্ট</h3>
-                <p>BDT ৩৮০</p>
-                <a href="https://wa.me/8801522120350?text=আমি%20ট্রেন্ডি%20প্রিন্টেড%20ক্যাজুয়াল%20শার্টটি%20কিনতে%20চাই" target="_blank" class="buy-btn">WhatsApp-এ অর্ডার করুন</a>
+                <span class="badge">অফার</span>
+                <img src="olive-shirt.jpg" alt="প্রিমিয়াম অলিভ গ্রিন শার্ট">
+                <h3>প্রিমিয়াম কটন শার্ট - অলিভ গ্রিন</h3>
+                <p class="price"><span class="old-price">৳৫৫০</span> ৳৩৯৯</p>
+                <p class="size">সাইজ: L, XL</p>
+                <a href="https://wa.me/8801522120350?text=আমি%20অলিভ%20গ্রিন%20শার্টটি%20অর্ডার%20করতে%20চাই" target="_blank" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp-এ অর্ডার করুন
+                </a>
             </div>
 
+            <!-- Product Card 3 -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1603252109303-2751441dd157?w=500&q=80" alt="Check Casual Shirt">
-                <h3>চেক ডিজাইন ক্যাজুয়াল শার্ট</h3>
-                <p>BDT ৪২০</p>
-                <a href="https://wa.me/8801522120350?text=আমি%20চেক%20ডিজাইন%20ক্যাজুয়াল%20শার্টটি%20কিনতে%20চাই" target="_blank" class="buy-btn">WhatsApp-এ অর্ডার করুন</a>
+                <span class="badge">অফার</span>
+                <img src="white-shirt.jpg" alt="প্রিমিয়াম অফ-হোয়াইট শার্ট">
+                <h3>প্রিমিয়াম কটন শার্ট - অফ-হোয়াইট</h3>
+                <p class="price"><span class="old-price">৳৫৫০</span> ৳৩৯৯</p>
+                <p class="size">সাইজ: L, XL</p>
+                <a href="https://wa.me/8801522120350?text=আমি%20অফ-হোয়াইট%20শার্টটি%20অর্ডার%20করতে%20চাই" target="_blank" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp-এ অর্ডার করুন
+                </a>
             </div>
 
+            <!-- Product Card 4 -->
             <div class="product-card">
-                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=500&q=80" alt="Slim Fit Shirt">
-                <h3>সলিড কালার স্লিম ফিট শার্ট</h3>
-                <p>BDT ৪০০</p>
-                <a href="https://wa.me/8801522120350?text=আমি%20সলিড%20কালার%20স্লিম%20ফিট%20শার্টটি%20কিনতে%20চাই" target="_blank" class="buy-btn">WhatsApp-এ অর্ডার করুন</a>
+                <span class="badge">অফার</span>
+                <img src="navy-shirt.jpg" alt="প্রিমিয়াম নেভি ব্লু শার্ট">
+                <h3>প্রিমিয়াম কটন শার্ট - নেভি ব্লু</h3>
+                <p class="price"><span class="old-price">৳৫৫০</span> ৳৩৯৯</p>
+                <p class="size">সাইজ: L, XL</p>
+                <a href="https://wa.me/8801522120350?text=আমি%20নেভি%20ব্লু%20শার্টটি%20অর্ডার%20করতে%20চাই" target="_blank" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp-এ অর্ডার করুন
+                </a>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div class="product-card">
+                <span class="badge">অফার</span>
+                <img src="black-shirt.jpg" alt="প্রিমিয়াম ব্ল্যাক শার্ট">
+                <h3>প্রিমিয়াম কটন শার্ট - রয়্যাল ব্ল্যাক</h3>
+                <p class="price"><span class="old-price">৳৫৫০</span> ৳৩৯৯</p>
+                <p class="size">সাইজ: L, XL</p>
+                <a href="https://wa.me/8801522120350?text=আমি%20ব্ল্যাক%20শার্টটি%20অর্ডার%20করতে%20চাই" target="_blank" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp-এ অর্ডার করুন
+                </a>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div class="product-card">
+                <span class="badge">অফার</span>
+                <img src="grey-shirt.jpg" alt="প্রিমিয়াম গ্রাফাইট গ্রেই শার্ট">
+                <h3>প্রিমিয়াম কটন শার্ট - গ্রাফাইট গ্রেই</h3>
+                <p class="price"><span class="old-price">৳৫৫০</span> ৳৩৯৯</p>
+                <p class="size">সাইজ: L, XL</p>
+                <a href="https://wa.me/8801522120350?text=আমি%20গ্রাফাইট%20গ্রেই%20শার্টটি%20অর্ডার%20করতে%20চাই" target="_blank" class="buy-btn">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp-এ অর্ডার করুন
+                </a>
             </div>
 
         </div>
     </section>
 
-    <footer id="contact">
-        <p>🚚 সারাদেশে ক্যাশ অন ডেলিভারিতে হোম ডেলিভারি সুবিধা</p>
-        <p>📞 অর্ডার করতে কল বা হোয়াটসঅ্যাপ করুন: 01522120350</p>
-        <p>&copy; 2026 S&S Dream Wear. All rights reserved.</p>
+    <!-- Footer -->
+    <footer id="about">
+        <h3>S&S Dream Wear</h3>
+        <p>রাজশাহী সিটি | ডেলিভারি সিস্টেম: সারাদেশে ক্যাশ অন ডেলিভারি</p>
+        <p>হটলাইন/হোয়াটসঅ্যাপ: +8801522120350</p>
+        <p>© 2026 S&S Dream Wear. All Rights Reserved.</p>
     </footer>
 
 </body>
