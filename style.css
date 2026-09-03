@@ -11,103 +11,92 @@
 body {
     background-color: #0b0f19;
     color: #e2e8f0;
-    line-height: 1.6;
+    line-height: 1.5;
+    padding-bottom: 60px; /* Space for mobile bottom bar */
 }
 
 /* Header */
 header {
-    background: rgba(15, 23, 42, 0.9);
-    padding: 15px 8%;
+    background: rgba(15, 23, 42, 0.95);
+    padding: 10px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
 }
 
 .nav-logo {
-    width: 42px;
-    height: 42px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
-    border: 2px solid #d97706;
+    border: 2px solid #f59e0b;
 }
 
 header span {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 700;
     color: #f59e0b;
-    letter-spacing: 0.5px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 25px;
+    gap: 12px;
 }
 
 nav ul li a {
     color: #cbd5e1;
     text-decoration: none;
     font-weight: 500;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #f59e0b;
+    font-size: 0.85rem;
 }
 
 /* Hero Section */
 .hero {
-    padding: 70px 20px 50px;
+    padding: 30px 15px 25px;
     text-align: center;
     background: radial-gradient(circle at center, #1e293b 0%, #0b0f19 100%);
 }
 
 .hero-logo {
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3px solid #f59e0b;
-    box-shadow: 0 0 30px rgba(245, 158, 11, 0.3);
+    margin-bottom: 10px;
+    border: 2px solid #f59e0b;
 }
 
 .hero h2 {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     color: #ffffff;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
 }
 
 .hero p {
     color: #94a3b8;
-    font-size: 1.1rem;
-    margin-bottom: 25px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
 }
 
 .cta-btn {
     display: inline-block;
-    padding: 12px 28px;
+    padding: 8px 20px;
     background: linear-gradient(135deg, #f59e0b, #d97706);
     color: #000;
     font-weight: 700;
+    font-size: 0.9rem;
     text-decoration: none;
-    border-radius: 30px;
-    transition: 0.3s;
-    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
-}
-
-.cta-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6);
+    border-radius: 20px;
 }
 
 /* Offer Banner */
@@ -115,93 +104,86 @@ nav ul li a:hover {
     background: #7c2d12;
     color: #fef08a;
     text-align: center;
-    padding: 12px 15px;
-    font-size: 1.05rem;
+    padding: 8px 10px;
+    font-size: 0.85rem;
     border-y: 1px solid #b45309;
 }
 
 /* Products Section */
 .products {
-    padding: 60px 8%;
-    max-width: 1300px;
+    padding: 25px 10px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .products h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: #f59e0b;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
+/* Mobile Friendly 2-Column Grid */
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 .product-card {
     background: #151f32;
-    border-radius: 16px;
-    padding: 18px;
+    border-radius: 12px;
+    padding: 10px;
     position: relative;
     border: 1px solid #1e293b;
-    transition: all 0.3s ease;
     display: flex;
     flex-direction: column;
 }
 
-.product-card:hover {
-    transform: translateY(-8px);
-    border-color: #f59e0b;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
-}
-
 .badge {
     position: absolute;
-    top: 28px;
-    right: 28px;
+    top: 15px;
+    right: 15px;
     background: #ef4444;
     color: #fff;
-    padding: 4px 12px;
-    font-size: 0.8rem;
+    padding: 2px 8px;
+    font-size: 0.65rem;
     font-weight: 700;
-    border-radius: 20px;
+    border-radius: 10px;
     z-index: 2;
 }
 
 .product-card img {
     width: 100%;
-    height: 320px;
+    height: 160px;
     object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 15px;
-}
-
-.product-card h3 {
-    font-size: 1.15rem;
-    color: #f8fafc;
+    border-radius: 8px;
     margin-bottom: 8px;
 }
 
+.product-card h3 {
+    font-size: 0.85rem;
+    color: #f8fafc;
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
 .price {
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: #f59e0b;
     font-weight: 700;
-    margin-bottom: 4px;
 }
 
 .old-price {
     text-decoration: line-through;
     color: #64748b;
-    font-size: 1rem;
-    margin-right: 8px;
+    font-size: 0.75rem;
 }
 
 .size {
     color: #94a3b8;
-    font-size: 0.9rem;
-    margin-bottom: 18px;
+    font-size: 0.75rem;
+    margin-bottom: 8px;
 }
 
 .buy-btn {
@@ -211,28 +193,74 @@ nav ul li a:hover {
     background-color: #25d366;
     color: #ffffff;
     text-decoration: none;
-    padding: 12px;
-    border-radius: 8px;
+    padding: 8px 5px;
+    border-radius: 6px;
+    font-size: 0.75rem;
     font-weight: 700;
-    transition: 0.3s;
-}
-
-.buy-btn:hover {
-    background-color: #1eb857;
-    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
 }
 
 /* Footer */
 footer {
     background: #070a12;
     text-align: center;
-    padding: 40px 20px;
+    padding: 25px 15px;
     border-top: 1px solid #1e293b;
     color: #64748b;
+    font-size: 0.85rem;
 }
 
 footer h3 {
     color: #f59e0b;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
-   
+
+/* Mobile Fixed Bottom Navigation */
+.mobile-bottom-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #0f172a;
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    border-top: 1px solid #1e293b;
+    z-index: 2000;
+}
+
+.bar-btn {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 6px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.call-btn {
+    background: #2563eb;
+}
+
+.wa-btn {
+    background: #25d366;
+}
+
+/* PC Responsive Grid Adjustment */
+@media (min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+    }
+    .product-card img {
+        height: 280px;
+    }
+    .mobile-bottom-bar {
+        display: none;
+    }
+    body {
+        padding-bottom: 0;
+    }
+}
